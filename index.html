@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuis Kotoba Kaigo Perawatan Tubuh dan Kebersihan Essay</title>
-    <style>
+    <title>Kuis Kotoba Kaigo - Fasilitas & Operasional Essay 🏢</title>
+    <style> 
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', sans-serif;
@@ -330,7 +330,7 @@
 
     <div class="start-screen" id="startScreen">
          <img src="logo.png" alt="Logo Kuis" class="logo-pembuka">
-        <h1>Kuis Kotoba Kaigo<br><span>Perawatan Tubuh dan Kebersihan</span><br>Essay</h1>
+        <h1>Kuis Kotoba Kaigo<br><span>Fasilitas & Operasional</span><br>Essay</h1>
         <p>✍️ Tulis jawaban di kertas</p>
         
         <div class="identitas-form">
@@ -412,46 +412,53 @@
 </div>
 
 <script>
-// ===== KOSAKATA MANDI & KEBERSIHAN (38 SOAL) =====
+// ===== KOSAKATA KAIGO - FASILITAS & OPERASIONAL (40 SOAL) =====
 const KOTOBA = [
-    { q: "suhu", jp: "温度（おんど）" },
-    { q: "menuangkan (air hangat)", jp: "（お湯を）かける（おゆをかける）" },
-    { q: "berkeringat", jp: "（汗を）かく（あせをかく）" },
-    { q: "sampo", jp: "シャンプー" },
-    { q: "disinfeksi", jp: "消毒（しょうどく）" },
-    { q: "larutan antiseptik", jp: "消毒液（しょうどくえき）" },
-    { q: "menjaga kebersihan tubuh", jp: "清潔保持（せいけつほじ）" },
-    { q: "mandi seka", jp: "清拭（せいしき）" },
-    { q: "keramas", jp: "洗髪（せんぱつ）" },
-    { q: "cuci muka", jp: "洗面（せんめん）" },
-    { q: "baskom", jp: "洗面器（せんめんき）" },
-    { q: "ruang ganti pakaian", jp: "脱衣室（だついしつ）" },
-    { q: "mandi", jp: "入浴（にゅうよく）" },
-    { q: "suam-suam kuku", jp: "ぬるい" },
-    { q: "menyeka", jp: "拭く（ふく）" },
-    { q: "kamar mandi", jp: "浴室（よくしつ）" },
-    { q: "bak mandi", jp: "浴槽（よくそう）" },
-    { q: "kondisioner", jp: "リンス" },
-    { q: "memeriksa, memastikan", jp: "確認（かくにん）" },
-    { q: "lap tangan basah", jp: "おしぼり" },
-    { q: "tirai", jp: "カーテン" },
-    { q: "pekerjaan rumah", jp: "家事（かじ）" },
-    { q: "membereskan", jp: "片付ける（かたづける）" },
-    { q: "mengeringkan", jp: "乾かす（かわかす）" },
-    { q: "mengering", jp: "乾く（かわく）" },
-    { q: "pergantian udara", jp: "換気（かんき）" },
-    { q: "lembaran", jp: "シーツ" },
-    { q: "cucian", jp: "洗濯物（せんたくもの）" },
-    { q: "penyedot debu", jp: "掃除機（そうじき）" },
-    { q: "melipat", jp: "たたむ" },
-    { q: "memasak", jp: "調理（ちょうり）" },
-    { q: "menyapu", jp: "掃く（はく）" },
-    { q: "kasur", jp: "布団（ふとん）" },
-    { q: "sapu", jp: "ほうき" },
-    { q: "menjemur", jp: "干す（ほす）" },
-    { q: "bantal", jp: "枕（まくら）" },
-    { q: "selimut", jp: "毛布（もうふ）" },
-    { q: "alat pel", jp: "モップ" }
+    // Gambar 1
+    { q: "mengamati, observasi",        jp: "観察（かんさつ）" },
+    { q: "acara",                       jp: "行事（ぎょうじ）" },
+    { q: "larangan",                    jp: "禁止（きんし）" },
+    { q: "rencana",                     jp: "計画（けいかく）" },
+    { q: "pengumuman",                  jp: "掲示（けいじ）" },
+    { q: "kasus",                       jp: "ケース" },
+    { q: "area pintu masuk",            jp: "玄関（げんかん）" },
+    { q: "peserta",                     jp: "参加者（さんかしゃ）" },
+    { q: "kecelakaan",                  jp: "事故（じこ）" },
+    { q: "fasilitas",                   jp: "施設（しせつ）" },
+    { q: "pergi tidur",                 jp: "就寝（しゅうしん）" },
+    { q: "pergi bekerja",               jp: "出勤（しゅっきん）" },
+    { q: "patroli",                     jp: "巡視（じゅんし）" },
+    { q: "menggunakan",                 jp: "使用（しよう）" },
+    { q: "kondisi",                     jp: "状況（じょうきょう）" },
+    { q: "tinggal jangka pendek, short stay", jp: "ショートステイ" },
+    { q: "kemandirian",                 jp: "自立（じりつ）" },
+    { q: "mobil antar-jemput",          jp: "送迎車（そうげいしゃ）" },
+    { q: "pulang bekerja",              jp: "退勤（たいきん）" },
+    { q: "roda",                        jp: "タイヤ" },
+    // Gambar 2
+    { q: "staf penanggung jawab",       jp: "担当者（たんとうしゃ）" },
+    { q: "juru masak",                  jp: "調理員（ちょうりいん）" },
+    { q: "terjatuh",                    jp: "転倒（てんとう）" },
+    { q: "alat pemanggil perawat",      jp: "ナースコール" },
+    { q: "shift siang",                 jp: "日勤（にっきん）" },
+    { q: "basah",                       jp: "濡れる（ぬれる）" },
+    { q: "muntah",                      jp: "吐く（はく）" },
+    { q: "melepas",                     jp: "外す（はずす）" },
+    { q: "pintu darurat",               jp: "非常口（ひじょうぐち）" },
+    { q: "alarm darurat",               jp: "非常ベル（ひじょうベル）" },
+    { q: "panggilan 119",               jp: "119番（ひゃくじゅうきゅうばん）" },
+    { q: "minum obat",                  jp: "服薬（ふくやく）" },
+    { q: "perubahan",                   jp: "変更（へんこう）" },
+    { q: "laporan",                     jp: "報告（ほうこく）" },
+    { q: "aula",                        jp: "ホール" },
+    { q: "festival",                    jp: "まつり" },
+    { q: "pertemuan",                   jp: "ミーティング" },
+    { q: "mengawasi",                   jp: "見守り（みまもり）" },
+    { q: "besuk",                       jp: "面会（めんかい）" },
+    { q: "serah-terima",                jp: "申し送り（もうしおくり）" },
+    { q: "shift malam",                 jp: "夜勤（やきん）" },
+    { q: "mewabah, epidemi",            jp: "流行（りゅうこう）" },
+    { q: "pengguna",                    jp: "利用者（りようしゃ）" }
 ];
 
 // ===== VARIABLES =====
